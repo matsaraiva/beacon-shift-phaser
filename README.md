@@ -4,9 +4,7 @@
 
 ![Beacon Shift desktop](output/playwright/gameplay.png)
 
-Demo publication is pending. Run the production preview locally with the commands below.
-
-[Source](https://github.com/matsaraiva/beacon-shift-phaser)
+[Play Beacon Shift](https://matsaraiva.github.io/beacon-shift-phaser/) · [Source](https://github.com/matsaraiva/beacon-shift-phaser)
 
 ## Play
 

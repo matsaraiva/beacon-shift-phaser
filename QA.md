@@ -81,7 +81,13 @@ All files are in `output/playwright/`:
 | Paused / natural loss / real win | `paused.png`, `mobile-paused.png`, `lost.png`, `won.png` |
 | Real gameplay capture | `full-watch.webm`, `gameplay.webm`, `gameplay.png`, `clip-frame.png` |
 | Public empty repository proof | `repository.png` |
+| Published browser checks | `published-verification.json` |
+| Live game screenshot | `published.png` |
 
 ## Publication
 
-`https://github.com/matsaraiva/beacon-shift-phaser` was created in the authenticated matsaraiva account after GitHub reported the name available. The user explicitly approved MIT licensing, commit/push and GitHub Pages on 14 October 2026. MIT is adopted, and source publication plus the manual Pages deployment are in progress. Local coordination briefs are excluded from the repository.
+`https://github.com/matsaraiva/beacon-shift-phaser` was created in the authenticated matsaraiva account after GitHub reported the name available. The user explicitly approved MIT licensing, commit/push and GitHub Pages on 14 October 2026. MIT is adopted and source is public. Local coordination briefs are excluded from the repository.
+
+The [initial publication workflow](https://github.com/matsaraiva/beacon-shift-phaser/actions/runs/38616518557) completed successfully for source commit `0e167ed1c98ff646138001c121e58b6d39feb01f`, including clean install, all 12 tests, build and deployment. [The live game](https://matsaraiva.github.io/beacon-shift-phaser/) returned HTTP 200. The same browser checks were then rerun against the actual published base path: desktop inputs, pause/resume, ten restarts, natural loss, portrait touch drag and landscape controls passed, with no errors, warnings or failed requests. `published-verification.json` preserves the results and the visibility limitation. The full 60-second recording remains the local production run described above.
+
+A subsequent documentation/evidence commit adds the verified Play link and this report without changing game code. The manual publication workflow is dispatched again for that final commit.
