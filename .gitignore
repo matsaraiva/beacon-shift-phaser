@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.playwright-cli/
+output/playwright/raw-video/
+*.log
+IMPLEMENTATION_BRIEF.md
+PROGRESS.md

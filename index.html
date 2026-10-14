@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#091c29" />
+    <meta name="description" content="Keep the light alive. Aim a lighthouse beam and survive a sixty-second night watch in Beacon Shift." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Beacon Shift — Keep the light alive</title>
+  </head>
+  <body>
+    <main class="watch">
+      <section class="brief" aria-labelledby="title">
+        <div class="eyebrow"><span class="signal"></span> THE NIGHT WATCH</div>
+        <h1 id="title">BEACON<br /><span>SHIFT</span></h1>
+        <p class="tagline">Keep the light alive.</p>
+        <div class="rule-line"></div>
+        <p class="intro">Something is moving in the fog.<br />Point your light. Hold it steady.<br />Make it through <strong>60 seconds.</strong></p>
+        <button id="start" class="primary" disabled>Loading the watch…</button>
+        <div class="controls" aria-label="How to play">
+          <p><span class="control-symbol">↗</span><span><strong>Point to aim</strong><small>Mouse or touch and drag</small></span></p>
+          <p><span class="control-symbol">↔</span><span><strong>Rotate the beam</strong><small>← → or A / D</small></span></p>
+          <p><span class="control-symbol">◷</span><span><strong>Hold the light</strong><small>A quarter second clears the fog</small></span></p>
+        </div>
+        <p class="edition">01 / A LIGHT IN THE DARK</p>
+      </section>
+      <section class="station" aria-label="Lighthouse game">
+        <div class="hud">
+          <div><span class="hud-label">WATCH REMAINING</span><strong id="time">60<span>s</span></strong></div>
+          <div><span class="hud-label">LIGHTHOUSE</span><strong id="lives" aria-label="3 lives">◆ ◆ ◆</strong></div>
+          <div class="score-block"><span class="hud-label">WATCH SCORE</span><strong id="score">000</strong></div>
+        </div>
+        <div class="arena-frame" id="arena-frame" tabindex="0" aria-label="Lighthouse arena. Aim with your pointer or left and right arrow keys.">
+          <div id="arena"></div>
+          <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
+          <div class="overlay" id="overlay" hidden>
+            <div class="overlay-content">
+              <span class="eyebrow" id="overlay-label">WATCH ON HOLD</span>
+              <h2 id="overlay-title">A moment of quiet.</h2>
+              <p id="overlay-copy">Your watch is paused.</p>
+              <button class="primary" id="continue">Resume watch <span>↗</span></button>
+            </div>
+          </div>
+          <div class="protection" id="protection" hidden>LIGHTHOUSE PROTECTED</div>
+        </div>
+        <div class="toolbar">
+          <span id="status" aria-live="polite">Survive 60s. Protect the lighthouse.</span>
+          <div><button id="pause" disabled>Pause</button><button id="restart" disabled>Restart <span>↻</span></button></div>
+        </div>
+        <div class="progress-track" aria-hidden="true"><div id="progress"></div></div>
+        <div class="station-footer"><span>NOCTURNE / COASTAL OUTPOST</span><span id="best">BEST 000</span></div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

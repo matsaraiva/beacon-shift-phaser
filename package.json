@@ -1,0 +1,26 @@
+{
+  "name": "beacon-shift-phaser",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "A nocturnal lighthouse survival arcade built with Phaser 4 and TypeScript.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "engines": { "node": ">=22.12.0" },
+  "dependencies": {
+    "@fontsource/dm-sans": "5.3.0",
+    "@fontsource/space-grotesk": "5.3.0",
+    "phaser": "4.2.1"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.4"
+  }
+}
